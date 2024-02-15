@@ -11,4 +11,8 @@ class AppImages {
   //.jpg
 
   //.gif
+//.json
+  static const String splashjson = "assets/lotties/splashj.json";
+
+
 }

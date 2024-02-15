@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:lottie/lottie.dart';
 import 'package:product_sale/utils/styles/app_text_style.dart';
 import '../../utils/colors/app_colors.dart';
 import '../../utils/images/app_images.dart';
@@ -17,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Future.delayed(
-      const Duration(milliseconds: 300),
+      const Duration(seconds: 30),
           () {
         Navigator.pushReplacement(
           context,
@@ -41,11 +42,11 @@ class _SplashScreenState extends State<SplashScreen> {
               top: 100.h,
                 child: SvgPicture.asset(AppImages.oval,)),
             Padding(
-              padding:  EdgeInsets.fromLTRB(110.w,290.h,110.w,0.w),
+              padding:  EdgeInsets.fromLTRB(0.w,0.h,0.w,0.w),
               child: Center(
                 child: Column(
                   children: [
-                    Image.asset(AppImages.splash,),
+                    Lottie.asset(AppImages.splashjson,),
                      Text("Quezzy",style: TextStyle(color: Colors.white,fontSize: 36.sp,fontWeight: FontWeight.w800),)
                   ],
                 ),

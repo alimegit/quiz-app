@@ -1,6 +1,8 @@
 class AppImages {
   //.png
   static const String splash = "assets/images/splash.png";
+  static const String persons = "assets/images/persons.png";
+
 
 
   //.svg

@@ -13,6 +13,8 @@ class AppImages {
   //.gif
 //.json
   static const String splashjson = "assets/lotties/splashj.json";
+//files
+  static const String data = "assets/data/test_data.json";
 
 
 }

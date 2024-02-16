@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lottie/lottie.dart';
+import 'package:product_sale/data/data_repository.dart';
 import 'package:product_sale/utils/styles/app_text_style.dart';
 import '../../utils/colors/app_colors.dart';
 import '../../utils/images/app_images.dart';
@@ -17,6 +18,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
+    DataRepository.instance.loadSubjects();
     Future.delayed(
       const Duration(seconds: 30),
           () {
